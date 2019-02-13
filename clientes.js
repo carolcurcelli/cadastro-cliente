@@ -2,10 +2,10 @@
 
 $(function(){
 
-    $.ajax({
+    $.ajax({ 
         url: `http://www.mocky.io/v2/5c64a4d53300006500b99929`,
         method: "GET",
-        dataType: "json",
+        dataType: "jsonp",
         error: genericError,
         success: getCustomersSuccess
     });
