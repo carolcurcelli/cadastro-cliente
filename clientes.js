@@ -4,10 +4,17 @@ $(function(){
 
     var genericError = function(){ debugger; }
     var getCustomersSuccess = function(customers){ 
+        var html = [];
         // foreach escrito de um jeito diferente:
         $.each(customers,function(index, customer){
-            console.log(customer);
+            html.push(`<tr>
+			<td>${customer.name}</td>
+			<td>${customer.email}</td>
+			<td>${customer.phone}</td>
+			<td>${customer.country}</td>
+		</tr>`);
         }); 
+        console.log(html.join("")); // junta todos os pedacinhos da array pra fazer uma string de texto
     }
     
     $.ajax({ 
