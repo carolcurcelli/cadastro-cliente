@@ -4,9 +4,10 @@ $(function(){
 
     var genericError = function(){ debugger; }
     var getCustomersSuccess = function(customers){ 
-        console.table(customers);
         // foreach escrito de um jeito diferente:
-        $.each(customers,function(){}); 
+        $.each(customers,function(index, customer){
+            console.log(customer);
+        }); 
     }
     
     $.ajax({ 
