@@ -15,6 +15,8 @@ $(function(){
 		</tr>`);
         }); 
         console.log(html.join("")); // junta todos os pedacinhos da array pra fazer uma string de texto
+        $("tbody").append(html.join("")); // diferente do appendTo porque append insere o conteúdo especificado pelo parametro, para o fim de cada elemento, enquanto appendTo funciona o contrário, ele insere cada elemento dentro do target inserido no parâmetro (rever isso porque francamente sei lá)
+        $("tr").eq(1).fadeOut("300");
     }
     
     $.ajax({ 
