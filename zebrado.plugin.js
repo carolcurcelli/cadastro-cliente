@@ -1,7 +1,4 @@
 $(function(){
-
-    
-
     $.fn.zebrado = function(colorA,colorB){
         // console.log(this);
         $(this)
