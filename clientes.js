@@ -2,6 +2,21 @@
 
 $(function(){
 
+    console.log(`
+    　　　　　　　 ∧__∧
+　　　　　　　 　( ° ヮ °)
+　　　　　　　　⊂　　つ
+　　　　　　　　　(つ ﾉ
+　　　　　　　　　 (ノ
+　　　＼　　　　　☆
+　　　　　　　　　　|　　　　　☆
+　　　　　　　(⌒ ⌒ヽ　　　/
+　　＼　（´⌒　　⌒　　⌒ヾ　　／
+　　 （’⌒　;　⌒　　　::⌒　　）
+　　（´　　　　　）　　　　　:::　）／
+
+    `);
+
     var genericError = function(){ debugger; }
     var getCustomersSuccess = function(customers){ 
         var html = [];
